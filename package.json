@@ -1,0 +1,99 @@
+{
+  "name": "retail-rfm",
+  "version": "0.1.0",
+  "description": "Zero-dependency customer analytics for retail e-commerce: RFM scoring, customer segmentation, and loyalty tier classification.",
+  "license": "MIT",
+  "author": "Hari K",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HXRIkumar/retail-rfm.git"
+  },
+  "bugs": "https://github.com/HXRIkumar/retail-rfm/issues",
+  "homepage": "https://github.com/HXRIkumar/retail-rfm#readme",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./rfm": {
+      "import": {
+        "types": "./dist/rfm.d.ts",
+        "default": "./dist/rfm.js"
+      },
+      "require": {
+        "types": "./dist/rfm.d.cts",
+        "default": "./dist/rfm.cjs"
+      }
+    },
+    "./segments": {
+      "import": {
+        "types": "./dist/segments.d.ts",
+        "default": "./dist/segments.js"
+      },
+      "require": {
+        "types": "./dist/segments.d.cts",
+        "default": "./dist/segments.cjs"
+      }
+    },
+    "./loyalty": {
+      "import": {
+        "types": "./dist/loyalty.d.ts",
+        "default": "./dist/loyalty.js"
+      },
+      "require": {
+        "types": "./dist/loyalty.d.cts",
+        "default": "./dist/loyalty.cjs"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run typecheck && npm run test && npm run build"
+  },
+  "keywords": [
+    "rfm",
+    "rfm-analysis",
+    "customer-segmentation",
+    "customer-analytics",
+    "loyalty",
+    "loyalty-program",
+    "ecommerce",
+    "retail",
+    "crm",
+    "recency-frequency-monetary",
+    "typescript"
+  ],
+  "devDependencies": {
+    "@vitest/coverage-v8": "^3.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.6.0",
+    "vitest": "^3.0.0"
+  }
+}
