@@ -8,9 +8,7 @@
 
 Type-safe RFM scoring, behavioural segmentation, customer intelligence, and loyalty program analytics for e-commerce platforms.
 
-[![npm version](https://img.shields.io/npm/v/retail-rfm.svg?style=for-the-badge)](https://www.npmjs.com/package/retail-rfm)
-[![npm downloads](https://img.shields.io/npm/dm/retail-rfm.svg?style=for-the-badge)](https://www.npmjs.com/package/retail-rfm)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+
 [![Bundle Size](https://img.shields.io/bundlephobia/minzip/retail-rfm?style=for-the-badge)](https://bundlephobia.com/package/retail-rfm)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
