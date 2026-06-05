@@ -9,7 +9,6 @@
 Type-safe RFM scoring, behavioural segmentation, customer intelligence, and loyalty program analytics for e-commerce platforms.
 
 
-[![Bundle Size](https://img.shields.io/bundlephobia/minzip/retail-rfm?style=for-the-badge)](https://bundlephobia.com/package/retail-rfm)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
 <br/>
