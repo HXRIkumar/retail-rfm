@@ -1,12 +1,75 @@
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,50:1E3A8A,100:2563EB&height=220&section=header&text=retail-rfm&fontSize=70&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Customer%20Analytics%20Engine%20for%20Retail%20%7C%20RFM%20Segmentation%20%7C%20Loyalty%20Intelligence&descAlignY=58&descSize=18&descColor=D6E4FF" width="100%"/>
+
 # retail-rfm
 
-> Zero-dependency customer analytics for retail e-commerce: RFM scoring, behavioural segmentation, and loyalty tier classification — fully typed, tree-shakeable, works in Node and browsers.
+### Customer Analytics Engine for Modern Retail Applications
 
-[![npm version](https://img.shields.io/npm/v/retail-rfm.svg)](https://www.npmjs.com/package/retail-rfm)
-[![npm downloads](https://img.shields.io/npm/dm/retail-rfm.svg)](https://www.npmjs.com/package/retail-rfm)
-[![license](https://img.shields.io/npm/l/retail-rfm.svg)](LICENSE)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue.svg)](https://www.typescriptlang.org/)
-[![bundle size](https://img.shields.io/bundlephobia/minzip/retail-rfm)](https://bundlephobia.com/package/retail-rfm)
+Type-safe RFM scoring, behavioural segmentation, customer intelligence, and loyalty program analytics for e-commerce platforms.
+
+[![npm version](https://img.shields.io/npm/v/retail-rfm.svg?style=for-the-badge)](https://www.npmjs.com/package/retail-rfm)
+[![npm downloads](https://img.shields.io/npm/dm/retail-rfm.svg?style=for-the-badge)](https://www.npmjs.com/package/retail-rfm)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Bundle Size](https://img.shields.io/bundlephobia/minzip/retail-rfm?style=for-the-badge)](https://bundlephobia.com/package/retail-rfm)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+
+<br/>
+
+![Node.js](https://img.shields.io/badge/Node.js-18+-339933?style=flat-square&logo=node.js&logoColor=white)
+![Browser](https://img.shields.io/badge/Browser-Compatible-blue?style=flat-square)
+![Tree Shaking](https://img.shields.io/badge/Tree_Shakeable-Yes-success?style=flat-square)
+![Dependencies](https://img.shields.io/badge/Dependencies-Zero-success?style=flat-square)
+
+</div>
+
+---
+
+## Why retail-rfm?
+
+Customer retention teams rarely struggle to collect data.
+
+They struggle to convert customer activity into actionable decisions.
+
+`retail-rfm` provides the analytical layer behind retention dashboards, CRM platforms, loyalty programs, marketing automation systems, and customer intelligence products.
+
+The library transforms raw purchase behaviour into:
+
+- RFM scores (Recency, Frequency, Monetary)
+- Behavioural customer segments
+- Loyalty program tiers
+- Reward point calculations
+- Segment-level marketing recommendations
+- Distribution analytics for dashboards
+
+All without external dependencies.
+
+---
+
+## Core Capabilities
+
+### RFM Intelligence
+
+Convert transactional activity into standardized customer quality scores.
+
+```ts
+const rfm = calculateRFMScore({
+  daysSinceLastPurchase: 12,
+  purchaseCount: 8,
+  totalSpend: 620,
+});
+
+console.log(rfm);
+
+/*
+{
+  recency: 4,
+  frequency: 4,
+  monetary: 4,
+  total: 12,
+  tier: "good"
+}
+*/
 
 ---
 
